@@ -146,13 +146,6 @@ CREATE TABLE donor (
 
     Open your web browser and visit [http://localhost:3000](http://localhost:3000) to access the application.
 
-# Contributing
-
-If you'd like to contribute to the project, please follow the guidelines in the [CONTRIBUTING.md](CONTRIBUTING.md) file.
-
-# License
-
-This project is licensed under the MIT License.
 
 # Acknowledgments
 
