@@ -27,8 +27,6 @@ The Blood Donation App is a comprehensive web application developed to facilitat
 - [Team Members](#team-members)
 - [Getting Started](#getting-started)
 - [Running the App](#running-the-app)
-- [Contributing](#contributing)
-- [License](#license)
 - [Acknowledgments](#acknowledgments)
 
 ## Features
