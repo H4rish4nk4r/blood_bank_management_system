@@ -9,9 +9,9 @@ def hospital_signup():
         email = data.get('email')
         password = data.get('password')
 
-        cur = mysql.connection.cursor()
+        cur = mysql.cursor()
         cur.execute("INSERT INTO hospital (hospital_name, email, password) VALUES (%s, %s, %s)", (hospital_name, email, password))
-        mysql.connection.commit()
+        mysql.commit()
         cur.close()
 
         return jsonify({'message': 'Hospital signed up successfully'}), 200

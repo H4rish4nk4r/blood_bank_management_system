@@ -14,7 +14,7 @@ def get_donors_by_blood_group():
         blood_group = data.get('blood_group')
         print('Received blood group:', blood_group)
 
-        cur = mysql.connection.cursor()
+        cur = mysql.cursor()
         cur.execute("SELECT * FROM donor WHERE blood_group = %s", (blood_group,))
         donors = [row_to_dict(cur, row) for row in cur.fetchall()]
         cur.close()

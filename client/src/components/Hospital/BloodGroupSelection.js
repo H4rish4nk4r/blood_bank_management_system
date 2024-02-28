@@ -88,6 +88,11 @@
             <option value="A-">A-</option>
             <option value="B+">B+</option>
             <option value="B-">B-</option>
+            <option value="O-">O-</option>
+            <option value="O+">O+</option>
+            <option value="AB-">AB-</option>
+            <option value="AB+">AB+</option>
+            
         </select>
         <button type="submit" className='mt-5  py-4 text-white rounded-lg bg-indigo-600 text-whote font-bold px-3 text-center '>Get Donors</button>
         </form>

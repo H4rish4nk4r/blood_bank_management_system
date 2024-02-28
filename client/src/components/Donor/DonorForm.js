@@ -22,7 +22,7 @@ export default function DonorForm() {
       });
 
       alert('Donor information submitted successfully!');
-      navigate('/')
+      navigate('/donor/thank')
     } catch (error) {
       console.error('Error submitting donor information:', error);
       alert('Error submitting donor information. Please try again.');

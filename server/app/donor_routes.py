@@ -8,10 +8,11 @@ def add_donor():
         name = data.get('name')
         phone = data.get('phone')
         blood_group = data.get('bloodGroup')
+        email=data.get('email')
 
-        cur = mysql.connection.cursor()
-        cur.execute("INSERT INTO donor (name, phone, blood_group) VALUES (%s, %s, %s)", (name, phone, blood_group))
-        mysql.connection.commit()
+        cur = mysql.cursor()
+        cur.execute("INSERT INTO donor (name, phone, blood_group,email) VALUES (%s ,%s, %s, %s)", (name, phone, blood_group,email))
+        mysql.commit()
         cur.close()
 
         return jsonify({'message': 'Donor added successfully'}), 200

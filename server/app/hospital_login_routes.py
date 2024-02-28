@@ -12,7 +12,7 @@ def hospital_login():
         password = data.get('password')
         print(f"Login attempt: Email - {email}, Password - {password}")
 
-        cur = mysql.connection.cursor()
+        cur = mysql.cursor()
         cur.execute("SELECT * FROM hospital WHERE email = %s AND password = %s", (email, password))
         hospital = cur.fetchone()
         cur.close()
